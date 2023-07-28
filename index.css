@@ -1,6 +1,6 @@
 
 .bg{
-    background-image: url(/assets/Background.png);
+    background-image: url(./assets/Background.png);
     background-repeat: no-repeat;
     height: 1739px;
     width: 100%;
