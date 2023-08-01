@@ -10,7 +10,7 @@
 }
 .content{
     position: absolute;
-    padding: 20px;
+    padding: 20px auto;
     top: 0;
     left: 0;
     z-index: 100;
