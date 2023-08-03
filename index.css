@@ -1,10 +1,14 @@
 
-.bg{
+.special-case-desk-bg{
     width: 100%;
     display: flex;
     position: relative;
 }
-
+.special-case-mob-bg{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
 .header-title img{
     width: 1000px;
 }
@@ -14,6 +18,9 @@
     top: 0;
     left: 0;
     z-index: 100;
+    width: 100%;
+}
+.figure{
     width: 100%;
 }
 .header{
@@ -35,7 +42,7 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    height: 400px;
+    height: 300px;
 }
 .middle{
     display: flex;
@@ -67,9 +74,9 @@
 }
 
 .bodyContent{
-    height: 1034px;
+    height: 950px;
     display: flex;
-    width: 100%;
+    width: 95%;
     margin: 0px auto 0 auto;
     justify-content: space-around;
 
@@ -79,7 +86,6 @@
     max-height: 800px;
 }
 .content-body{
-    /* width: 25%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -134,12 +140,22 @@
 .footer-imgs img{
     width: 100%;
 }
+/* .special-case-mob-bg{
+    display: none;
+} */
 @media only screen and (max-width: 1127px) {
 
     
 }
 
 @media only screen and (max-width: 1399px) {
+    .middleContent{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 430px;
+    }
     .footer-imgs img {
         width: 80%;
     }
@@ -174,14 +190,22 @@
 
 }
 @media only screen and (max-width: 688px) {
+    .headerContent{
+        height: 300px;
+    }
+    
+    .middleContent{
+        height: 370px;
+    }
     .img-desc-body{
         width: 100%;
         height: 100%;
     }
-    .show-mob{
-        margin-bottom: 35px;
-        height: 366px;
+    .content-body-mob{
+        height: 320px;
         align-items: center;
+        width: 95%;
+        margin: 0 auto;
     }
     .content-body{
         justify-content: flex-end;
@@ -203,13 +227,33 @@
     .middle-img{
         max-width: 100px;
     }
+    .text-content{
+        font-size: 30px;
+    }
 }
 @media only screen and (max-width: 370px) {
+    .content-body-mob{
+        height: 370px;
+    }
+    .headerContent{
+        height: 240px;
+    }
+    .special-case-desk-bg{
+        display: none;
+    }
+    .special-case-mob-bg{
+        height: 1510px;
+        background-image: url('./assets/Background-mob.png');
+        background-repeat: no-repeat;
+        width: 100%;
+    }
     .middle-img{
         max-width: 85px;
     }
     .bodyContent{
-        height: 530px;
+        height: 430px;
+        width: 90%;
+
     }
 }
 /*  */
